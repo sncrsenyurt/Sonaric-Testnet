@@ -10,7 +10,7 @@
 
 #
 
-# Donanım.
+# Hardware.
 
 > We need Ubuntu 22 or later.
 
@@ -20,7 +20,7 @@
 
 #
 
-# Kurulum
+# Setup
 
 ```console
 # sunucu update
@@ -54,7 +54,7 @@ sonaric node-info
 ```console
 # edit the end of code.
 ssh -L 127.0.0.1:44003:127.0.0.1:44003 -L 127.0.0.1:44004:127.0.0.1:44004 -L 127.0.0.1:44005:127.0.0.1:44005 -L 127.0.0.1:44006:127.0.0.1:44006 user@your-vps-ip
-# user olarak root kullanıyorsanız root yazalım.
+# If you are using root as user, type root.
 ```
 
 > To understand that the above command works: `curl http://localhost:44004`
@@ -63,8 +63,8 @@ ssh -L 127.0.0.1:44003:127.0.0.1:44003 -L 127.0.0.1:44004:127.0.0.1:44004 -L 127
 
 ```console
 sonaric identity-export -o node-ismi.identity
-# node-ismi kısmını silip bir isim belirleyelim.
-# şifremizi girelim.
+# delete the node-name and set a name.
+# enter your password.
 ````
 
 > You can download the backup file on our server via SFTP (File) connection applications or via Termius (Mac - Windows - Phone), Mobaxterm.
