@@ -23,7 +23,7 @@
 # Setup
 
 ```console
-# sunucu update
+# Server update
 sudo apt-get update && sudo apt-get upgrade -y
 
 # install nodejs using nvm 
